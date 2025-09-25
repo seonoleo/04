@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
-{int  time;
+{int  year;
 
-printf("input the second:");
-scanf("%i", &time);
+printf("input the year:");
+scanf("%i", &year);
 
-printf("the time is: %i:%i\n", time/60, time%60);
+printf("is the year %i the leap year?: %i\n", year, 
+(year%4==0 && year%100!=0)||(year%400==0));
 
 
   system("PAUSE");	
